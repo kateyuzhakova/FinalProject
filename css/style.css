@@ -1,0 +1,337 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #302f2f;
+    background-color: #f5f4f1;  
+    line-height: 1.6;
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Стили шапки */
+.navbar {
+    background-color: #dfd8e4;
+    box-shadow: 0 2px 25px rgba(45, 43, 43, 0.1);
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #422b20;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #0f0606;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: #422b20;
+}
+
+/* Стили для "about-us" */
+.about-us {
+  padding: 50px 0;
+}
+
+.about-us-image {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-us-title {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-align: left;
+    color: #422b20;
+}
+
+.about-us-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+
+/* Стили для секции benefits */
+.benefits {
+    padding: 30px 0;
+    background-color: white;
+}
+
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #422b20;
+}
+
+.benefits .card {
+    border: 1px solid #eee;
+    border-radius: 8px; /* Скругленные углы */
+    margin-bottom: 20px; /* Отступ между карточками */
+    width: 100%; /* Карточки на всю ширину экрана */
+    max-width: 400px;
+    margin-left: auto; /* Центрирование карточек на мобильном */
+    margin-right: auto;
+}
+
+.benefits .card-img-top {
+    height: 300px; /* Устанавливаем высоту изображения */
+    object-fit: cover; /* Обрезаем изображения для соответствия высотам */
+}
+
+.benefits .card-body {
+    padding: 15px;
+}
+
+.benefits .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #422b20;
+}
+
+.benefits .card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Стили для секции "gallery" */
+.gallery {
+    padding: 50px 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #422b20;
+}
+
+#carouselExampleIndicators {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#carouselExampleIndicators .carousel-inner {
+    max-height: 70vh;
+    border-radius: 10px;
+    display: flex;
+}
+
+#carouselExampleIndicators .carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Стили для секции "contacts" */
+.contacts {
+    padding: 50px 0;
+    background-image: linear-gradient(to right, #f0f0f0, #e9ecef); /* Замени на свои цвета */
+    box-shadow: 0 2px 25px rgba(45, 43, 43, 0.1);
+}
+
+
+.contacts h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #422b20; /* Цвет заголовка, как в шапке */
+    font-weight: bold; /* Добавляем жирный шрифт, если нужно */
+}
+
+.contacts .row {
+    margin-bottom: 15px; /* Отступ между разными блоками */
+}
+
+.contacts .col-md-4 {
+    padding: 10px; /* Отступы внутри блоков */
+}
+
+.contact-icon {
+    width: 60px; 
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+
+.contacts p {
+  margin-bottom: 5px;
+  font-size: 15px; 
+  color: #333; 
+}
+
+
+.contacts a {
+  color: #422b20;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+
+}
+
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+.map-image {
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 1200px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+
+.map-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+
+.master-class-callout {
+    background-color: #f5f4f1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.callout-box {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 600px;
+}
+.master-class-call{
+  text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.master-class-call a {
+  color: #422b20;
+    text-decoration: underline;
+}
+
+
+
+
+/* Стили для страниц c master-class-...html */
+.master-class-details {
+    padding: 20px 0; 
+
+}
+  
+  .master-class-details h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      color: #2a201b;
+  }
+  
+  .master-class-details img {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+}
+  
+  
+  .master-class-details h2 {
+    font-size: 1.8rem;
+    color: #2b2720;
+   margin-top: 20px;
+   margin-bottom: 10px;
+      border-bottom: 2px solid #5a3f17; 
+   padding-bottom: 5px;
+
+}
+
+.master-class-details p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+     color: #444;
+}
+  
+
+
+  .master-class-details .btn-primary {
+      background-color: #422b20;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px auto;
+       transition: background-color 0.3s;
+  }
+  
+  .master-class-details .btn-primary:hover {
+      background-color: #542e2e;
+  }
+
+
+  .modal-dialog {
+    max-width: 400px;
+}
+
+.modal-content {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-body .btn-primary {
+    background-color: #542e2e;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.modal-body .btn-primary:hover {
+    background-color: #422b20;
+}
+
+.care-section {
+    padding: 20px;
+}
+
+.care-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.care-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+     font-weight: 600;
+}
+
+.care-section p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
